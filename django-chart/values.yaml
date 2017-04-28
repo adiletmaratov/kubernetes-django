@@ -3,8 +3,8 @@
 # Declare variables to be passed into your templates.
 replicaCount: 2
 image:
-  repository: demor/
-  tag: stable
+  repository: demor/djangogirls-app
+  tag: latest
   pullPolicy: IfNotPresent
 service:
   name: nginx
