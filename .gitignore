@@ -1,3 +1,7 @@
-/venv
+containers/app/venv/
+kubernetes/app/venv/
 db.sqlite3
 containers/app/static
+*.pyc
+.idea/
+*.tgz

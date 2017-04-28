@@ -1,23 +1,23 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: app-maroon
+  name: app-orange
   labels:
     name: app
 spec:
   replicas: 3
   selector:
     name: app
-    colour: maroon
+    colour: orange
   template:
     metadata:
       labels:
         name: app
-        colour: maroon
+        colour: orange
     spec:
       containers:
         - name: app
-          image: hnarayanan/djangogirls-app:1.2-maroon
+          image: demor/djangogirls-app
           env:
             - name: MY_POD_NAME
               valueFrom:
